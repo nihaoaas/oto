@@ -7,24 +7,24 @@
 <title>首页 - <?php echo ($CONF['mallTitle']); ?></title>
 <meta name="keywords" content="<?php echo ($CONF['mallKeywords']); ?>" />
 <meta name="description" content="<?php echo ($CONF['mallDesc']); ?>" />
-<link rel="stylesheet" href="/wstmall-o2o/Apps/Home/View/default/css/common.css" />
-<link rel="stylesheet" href="/wstmall-o2o/Apps/Home/View/default/css/index.css" />
-<link rel="stylesheet" href="/wstmall-o2o/Apps/Home/View/default/css/base.css" />
-<link rel="stylesheet" href="/wstmall-o2o/Apps/Home/View/default/css/head.css" />
+<link rel="stylesheet" href="/oto/wstmall-o2o/Apps/Home/View/default/css/common.css" />
+<link rel="stylesheet" href="/oto/wstmall-o2o/Apps/Home/View/default/css/index.css" />
+<link rel="stylesheet" href="/oto/wstmall-o2o/Apps/Home/View/default/css/base.css" />
+<link rel="stylesheet" href="/oto/wstmall-o2o/Apps/Home/View/default/css/head.css" />
 </head>
 
 
 
 <body>
 	
-<script src="/wstmall-o2o/Public/js/jquery.min.js"></script>
-<script src="/wstmall-o2o/Public/plugins/lazyload/jquery.lazyload.min.js?v=1.9.1"></script>
-<script src="/wstmall-o2o/Public/plugins/layer/layer.min.js"></script>
+<script src="/oto/wstmall-o2o/Public/js/jquery.min.js"></script>
+<script src="/oto/wstmall-o2o/Public/plugins/lazyload/jquery.lazyload.min.js?v=1.9.1"></script>
+<script src="/oto/wstmall-o2o/Public/plugins/layer/layer.min.js"></script>
 <script type="text/javascript">
 var WST = ThinkPHP = window.Think = {
-        "ROOT"   : "/wstmall-o2o",
-        "APP"    : "/wstmall-o2o/index.php",
-        "PUBLIC" : "/wstmall-o2o/Public",
+        "ROOT"   : "/oto/wstmall-o2o",
+        "APP"    : "/oto/wstmall-o2o/index.php",
+        "PUBLIC" : "/oto/wstmall-o2o/Public",
         "DEEP"   : "<?php echo C('URL_PATHINFO_DEPR');?>",
         "MODEL"  : ["<?php echo C('URL_MODEL');?>", "<?php echo C('URL_CASE_INSENSITIVE');?>", "<?php echo C('URL_HTML_SUFFIX');?>"],
         "VAR"    : ["<?php echo C('VAR_MODULE');?>", "<?php echo C('VAR_CONTROLLER');?>", "<?php echo C('VAR_ACTION');?>"],
@@ -41,7 +41,7 @@ var WST = ThinkPHP = window.Think = {
     	$('.lazyImg').lazyload({ effect: "fadeIn",failurelimit : 10,threshold: 200,placeholder:WST.DEFAULT_IMG});
     });
 </script>
-<script src="/wstmall-o2o/Public/js/think.js"></script>
+<script src="/oto/wstmall-o2o/Public/js/think.js"></script>
 <div id="wst-shortcut">
 	<div class="w">
 		<ul class="fl lh" style='float:left;width:700px;'>
@@ -49,12 +49,12 @@ var WST = ThinkPHP = window.Think = {
 				rel="nofollow">收藏<?php echo ($CONF['mallName']); ?></a></li>
 			<li class="fore3 ld menu" id="app-jd" data-widget="dropdown">
 				<span class="outline"></span> <span class="blank"></span> 
-				<a href="<?php echo U('WebApp/Index/index');?>" target="_blank"><img src="/wstmall-o2o/Apps/Home/View/default/images/icon_top_02.png"/>&nbsp;<?php echo ($CONF['mallName']); ?> 手机版</a>
+				<a href="<?php echo U('WebApp/Index/index');?>" target="_blank"><img src="/oto/wstmall-o2o/Apps/Home/View/default/images/icon_top_02.png"/>&nbsp;<?php echo ($CONF['mallName']); ?> 手机版</a>
 			</li>
 			<li class="fore4" id="biz-service" data-widget="dropdown" style='padding:0;'>&nbsp;<span style="color:#ddd;">|</span>&nbsp;&nbsp;&nbsp;
 				所在城市
 				【<span class='wst-city'>&nbsp;<?php echo ($currArea["areaName"]); ?>&nbsp;</span>】
-				<img src="/wstmall-o2o/Apps/Home/View/default/images/icon_top_03.png"/>	
+				<img src="/oto/wstmall-o2o/Apps/Home/View/default/images/icon_top_03.png"/>	
 				&nbsp;&nbsp;<a href="javascript:;" onclick="toChangeCity();">切换城市</a><div class="wst-downicon"><i class="triangle"></i></div>
 			</li>
 		</ul>
@@ -114,11 +114,11 @@ var WST = ThinkPHP = window.Think = {
 		<div id="wst-search-des-container">
 			<div class="des-box">
 				<div class='wst-reach'>
-					<img src="/wstmall-o2o/Apps/Home/View/default/images/sadn.jpg"  height="38" width="40"/>
+					<img src="/oto/wstmall-o2o/Apps/Home/View/default/images/sadn.jpg"  height="38" width="40"/>
 					<div style="float:left;position:absolute;top:0px;left:38px;"><span style="font-weight:bolder;">闪电配送</span><br/><span style="color:#e23c3d;">最快1小时送达</span></div>
 				</div>
 				<div class='wst-since'>
-					<img src="/wstmall-o2o/Apps/Home/View/default/images/sqzt.jpg"  height="38" width="40"/>
+					<img src="/oto/wstmall-o2o/Apps/Home/View/default/images/sqzt.jpg"  height="38" width="40"/>
 					<div style="float:left;position:absolute;top:0px;left:38px;"><span style="font-weight:bolder;">社区自提</span><br/><span style="color:#e23c3d;">330家自提点</span></div>
 				</div>
 			</div>
@@ -199,7 +199,7 @@ var WST = ThinkPHP = window.Think = {
 		<div class="wst-slide" id="wst-slide">
 			<ul class="wst-slide-items">
 				<?php $_result=WSTAds(-1);if(is_array($_result)): $k = 0; $__LIST__ = $_result;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($k % 2 );++$k;?><li style="z-index: 1;"><a target="_blank" onclick="addAccess(<?php echo ($vo['adId']); ?>)" href="<?php echo ($vo['adURL']); ?>">
-						<img class='lazyImg' data-original="/wstmall-o2o/<?php echo ($vo['adFile']); ?>" height="360" width="100%" title="<?php echo ($vo['adName']); ?>" />
+						<img class='lazyImg' data-original="/oto/wstmall-o2o/<?php echo ($vo['adFile']); ?>" height="360" width="100%" title="<?php echo ($vo['adName']); ?>" />
 				</a></li><?php endforeach; endif; else: echo "" ;endif; ?>
 			</ul>
 			<div class="wst-slide-numbox">
@@ -221,11 +221,11 @@ var WST = ThinkPHP = window.Think = {
 			<div class="wst-fl-left wst-fl<?php echo ($k1); ?>" style="position: relative;">
 				<div class="wst-fl-catbox">
 					<?php if(is_array($catAds[$vo1['catId']])): $kv = 0; $__LIST__ = $catAds[$vo1['catId']];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($kv % 2 );++$kv;?><a onclick="addAccess(<?php echo ($vo['adId']); ?>)" href="<?php echo ($vo['adURL']); ?>" target="_blank"> 
-						<img class='lazyImg' data-original="/wstmall-o2o/<?php echo ($vo['adFile']); ?>" height="275" width="210" title="<?php echo ($vo['adName']); ?>" />
+						<img class='lazyImg' data-original="/oto/wstmall-o2o/<?php echo ($vo['adFile']); ?>" height="275" width="210" title="<?php echo ($vo['adName']); ?>" />
 					</a><?php endforeach; endif; else: echo "" ;endif; ?>
 				</div>
 				<div class="wst-fl-head"
-					style="background: url(/wstmall-o2o/Apps/Home/View/default/images/<?php echo ($k1); ?>fhd.png) no-repeat 100% 100%;">
+					style="background: url(/oto/wstmall-o2o/Apps/Home/View/default/images/<?php echo ($k1); ?>fhd.png) no-repeat 100% 100%;">
 					<a
 						href="<?php echo U('Home/Goods/getGoodsList/',array('c1Id'=>$vo1['catId']));?>">
 						<span style="font-size: 18px;">F<?php echo ($k1); ?></span><?php echo ($vo1["catName"]); ?>
@@ -252,7 +252,7 @@ var WST = ThinkPHP = window.Think = {
 							<div class="wst-goods-thumb">
 								<a
 									href="<?php echo U('Home/Goods/getGoodsDetails/',array('goodsId'=>$vo2['goodsId']));?>">
-									<img class='lazyImg' data-original="/wstmall-o2o/<?php echo ($vo2['goodsThums']); ?>" width="180" />
+									<img class='lazyImg' data-original="/oto/wstmall-o2o/<?php echo ($vo2['goodsThums']); ?>" width="180" />
 								</a>
 							</div>
 							<div class="wst-goods-thumb-des">
@@ -263,7 +263,7 @@ var WST = ThinkPHP = window.Think = {
 								<div>
 									<em class="wst-left wst-goods-price" id='shopGoodsPrice_<?php echo ($vo2["goodsId"]); ?>' dataId='<?php echo ($vo2["goodsAttrId"]); ?>'>￥<?php echo (number_format($vo2['shopPrice'],2)); ?></em>
 									<a href="javascript:addCart(<?php echo ($vo2['goodsId']); ?>,0,'<?php echo ($vo2['goodsThums']); ?>')" class="wst-right <?php if(session('WST_USER.userId') > 0 ): ?>btnCart<?php endif; ?>"> 
-									<img src="/wstmall-o2o/Apps/Home/View/default/images/btn_addcart.png" width="85" />
+									<img src="/oto/wstmall-o2o/Apps/Home/View/default/images/btn_addcart.png" width="85" />
 									</a>
 									<div class='wst-clear'></div>
 								</div>
@@ -279,7 +279,7 @@ var WST = ThinkPHP = window.Think = {
 							<div class="wst-goods-thumb">
 								<a
 									href="<?php echo U('Home/Goods/getGoodsDetails/',array('goodsId'=>$vo3[goodsId]));?>">
-									<img class='lazyImg' data-original="/wstmall-o2o/<?php echo ($vo3['goodsThums']); ?>" width="180" />
+									<img class='lazyImg' data-original="/oto/wstmall-o2o/<?php echo ($vo3['goodsThums']); ?>" width="180" />
 								</a>
 							</div>
 							<div class="wst-goods-thumb-des">
@@ -290,7 +290,7 @@ var WST = ThinkPHP = window.Think = {
 								<div>
 									<em class="wst-left wst-goods-price" id='shopGoodsPrice_<?php echo ($vo3["goodsId"]); ?>' dataId='<?php echo ($vo3["goodsAttrId"]); ?>'>￥<?php echo (number_format($vo3['shopPrice'],2)); ?></em>
 									<a href="javascript:addCart(<?php echo ($vo3['goodsId']); ?>,0,'<?php echo ($vo3['goodsThums']); ?>')" class="wst-right <?php if(session('WST_USER.userId') > 0 ): ?>btnCart<?php endif; ?>" > <img
-										src="/wstmall-o2o/Apps/Home/View/default/images/btn_addcart.png"
+										src="/oto/wstmall-o2o/Apps/Home/View/default/images/btn_addcart.png"
 										width="85" />
 									</a>
 									<div class='wst-clear'></div>
@@ -305,7 +305,7 @@ var WST = ThinkPHP = window.Think = {
 							<div style="width: 180px;">
 								<a
 									href="<?php echo U('Home/Shops/toShopHome/',array('shopId'=>$vo2['shopId']));?>">
-									<img class='lazyImg' data-original="/wstmall-o2o/<?php echo ($vo2['shopImg']); ?>" height="120" width="180" />
+									<img class='lazyImg' data-original="/oto/wstmall-o2o/<?php echo ($vo2['shopImg']); ?>" height="120" width="180" />
 								</a>
 							</div>
 						</div><?php endforeach; endif; else: echo "" ;endif; ?>
@@ -332,7 +332,7 @@ var WST = ThinkPHP = window.Think = {
 		<div class="wst-footer-hp-ck1">
 			<?php if(is_array($helps)): $k1 = 0; $__LIST__ = $helps;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo1): $mod = ($k1 % 2 );++$k1;?><div class="wst-footer-wz-ca">
 				<div class="wst-footer-wz-pt">
-				    <img src="/wstmall-o2o/Apps/Home/View/default/images/a<?php echo ($k1); ?>.jpg" height="18" width="18"/>
+				    <img src="/oto/wstmall-o2o/Apps/Home/View/default/images/a<?php echo ($k1); ?>.jpg" height="18" width="18"/>
 					<span class="wst-footer-wz-pn"><?php echo ($vo1["catName"]); ?></span>
 					<div style='margin-left:30px;'>
 						<?php if(is_array($vo1['articlecats'])): $k2 = 0; $__LIST__ = $vo1['articlecats'];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo2): $mod = ($k2 % 2 );++$k2;?><a href="<?php echo U('Home/Articles/index/',array('articleId'=>$vo2['articleId']));?>"><?php echo ($vo2['articleTitle']); ?></a><br/><?php endforeach; endif; else: echo "" ;endif; ?>
@@ -342,7 +342,7 @@ var WST = ThinkPHP = window.Think = {
 			
 			<div class="wst-footer-wz-clt">
 				<div style="padding-top:5px;line-height:25px;">
-				    <img src="/wstmall-o2o/Apps/Home/View/default/images/a6.jpg" height="18" width="18"/>
+				    <img src="/oto/wstmall-o2o/Apps/Home/View/default/images/a6.jpg" height="18" width="18"/>
 					<span class="wst-footer-wz-kf">联系客服</span>
 					<div style='margin-left:30px;'>
 						<a href="#">联系电话</a><br/>
@@ -358,7 +358,7 @@ var WST = ThinkPHP = window.Think = {
 		</div>
 	    
 		<div class="wst-footer-hp-ck2">
-			<img src="/wstmall-o2o/Apps/Home/View/default/images/alipay.jpg" height="40" width="120"/>支付宝签约商家&nbsp;|&nbsp;
+			<img src="/oto/wstmall-o2o/Apps/Home/View/default/images/alipay.jpg" height="40" width="120"/>支付宝签约商家&nbsp;|&nbsp;
 			<span class="wst-footer-frd">正品保障</span><span >100%原产地</span>&nbsp;|&nbsp;
 			<span class="wst-footer-frd">7天退货保障</span>购物无忧&nbsp;|&nbsp;
 			<span class="wst-footer-frd">免费配送</span>满98包邮&nbsp;|&nbsp;
@@ -386,18 +386,18 @@ var WST = ThinkPHP = window.Think = {
 	</div>
 </div>
 
-	<link rel="stylesheet" type="text/css" href="/wstmall-o2o/Apps/Home/View/default/css/cart.css" />
-<script src="/wstmall-o2o/Apps/Home/View/default/js/userlogin.js"></script>
-<script type="text/javascript" src="/wstmall-o2o/Apps/Home/View/default/js/cart/common.js?v=725"></script>
-<script type="text/javascript" src="/wstmall-o2o/Apps/Home/View/default/js/cart/quick_links.js"></script>
+	<link rel="stylesheet" type="text/css" href="/oto/wstmall-o2o/Apps/Home/View/default/css/cart.css" />
+<script src="/oto/wstmall-o2o/Apps/Home/View/default/js/userlogin.js"></script>
+<script type="text/javascript" src="/oto/wstmall-o2o/Apps/Home/View/default/js/cart/common.js?v=725"></script>
+<script type="text/javascript" src="/oto/wstmall-o2o/Apps/Home/View/default/js/cart/quick_links.js"></script>
 <!--[if lte IE 8]>
-<script src="/wstmall-o2o/Apps/Home/View/default/js/cart/ieBetter.js"></script>
+<script src="/oto/wstmall-o2o/Apps/Home/View/default/js/cart/ieBetter.js"></script>
 <![endif]-->
-<script src="/wstmall-o2o/Apps/Home/View/default/js/cart/parabola.js"></script>
+<script src="/oto/wstmall-o2o/Apps/Home/View/default/js/cart/parabola.js"></script>
 <!--右侧贴边导航quick_links.js控制-->
 	<div id="flyItem" class="fly_item" style="display:none;">
 		<p class="fly_imgbox">
-		<img src="/wstmall-o2o/Apps/Home/View/default/images/item-pic.jpg"
+		<img src="/oto/wstmall-o2o/Apps/Home/View/default/images/item-pic.jpg"
 			width="30" height="30">
 		</p>
 	</div>
@@ -410,9 +410,9 @@ var WST = ThinkPHP = window.Think = {
 							<?php if($WST_USER['userId'] > 0): ?><div class="avatar_box">
 								<p class="avatar_imgbox">
 									<?php if($WST_USER['userPhoto']!=''){ ?>
-									<img src="/wstmall-o2o/<?php echo ($WST_USER['userPhoto']); ?>" />
+									<img src="/oto/wstmall-o2o/<?php echo ($WST_USER['userPhoto']); ?>" />
 									<?php }else{ ?>
-									<img src="/wstmall-o2o/Apps/Home/View/default/images/no-img_mid_.jpg" />
+									<img src="/oto/wstmall-o2o/Apps/Home/View/default/images/no-img_mid_.jpg" />
 									<?php } ?>
 								</p>
 								<?php if($WST_USER['userId'] > 0): ?><ul class="user_info">
@@ -430,7 +430,7 @@ var WST = ThinkPHP = window.Think = {
 					<div class="span">购物车</div> <span class="cart_num">0</span></a></li>
 					<?php if($CONF['qqNo'] != ''): ?><li>
 						<a href="tencent://message/?uin=<?php echo ($CONF['qqNo']); ?>&Site=QQ交谈&Menu=yes" style="padding-top:5px;padding-bottom:5px;margin-bottom: 5px;">
-						<img src="/wstmall-o2o/Apps/Home/View/default/images/qq.jpg"  height="38" width="40" />
+						<img src="/oto/wstmall-o2o/Apps/Home/View/default/images/qq.jpg"  height="38" width="40" />
 						</a>
 					</li><?php endif; ?>
 				</div>
@@ -438,7 +438,7 @@ var WST = ThinkPHP = window.Think = {
 					<li><a href="#none"><i class="mpbtn_qrcode"></i></a>
 						<div class="mp_qrcode" style="display: none;">
 							<img
-								src="/wstmall-o2o/Apps/Home/View/default/images/wstmall_weixin.png"
+								src="/oto/wstmall-o2o/Apps/Home/View/default/images/wstmall_weixin.png"
 								width="148"  /><i class="icon_arrow_white"></i>
 						</div>
 					</li>
@@ -582,12 +582,12 @@ var WST = ThinkPHP = window.Think = {
 	}
 	
 </script>
-	<script src="/wstmall-o2o/Public/js/common.js"></script>
-    <script src="/wstmall-o2o/Apps/Home/View/default/js/index.js"></script>
-    <script src="/wstmall-o2o/Apps/Home/View/default/js/common.js"></script>
-    <script src="/wstmall-o2o/Apps/Home/View/default/js/global.js" type="text/javascript"></script>
-    <script src="/wstmall-o2o/Apps/Home/View/default/js/head.js" type="text/javascript"></script>
-    <script src="/wstmall-o2o/Apps/Home/View/default/js/goods.js" type="text/javascript"></script>
+	<script src="/oto/wstmall-o2o/Public/js/common.js"></script>
+    <script src="/oto/wstmall-o2o/Apps/Home/View/default/js/index.js"></script>
+    <script src="/oto/wstmall-o2o/Apps/Home/View/default/js/common.js"></script>
+    <script src="/oto/wstmall-o2o/Apps/Home/View/default/js/global.js" type="text/javascript"></script>
+    <script src="/oto/wstmall-o2o/Apps/Home/View/default/js/head.js" type="text/javascript"></script>
+    <script src="/oto/wstmall-o2o/Apps/Home/View/default/js/goods.js" type="text/javascript"></script>
 </body>
 
 </html>

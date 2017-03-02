@@ -78,6 +78,7 @@ class GoodsCatsAction extends BaseAction{
 	 */
 	public function index(){
 		$this->isLogin();
+		//sen 检查权限
 		$this->checkPrivelege('spfl_00');
 		$m = D('Admin/GoodsCats');
     	$list = $m->getCatAndChild();

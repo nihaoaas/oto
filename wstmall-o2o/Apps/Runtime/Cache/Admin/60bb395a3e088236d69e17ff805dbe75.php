@@ -5,15 +5,15 @@
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <title><?php echo ($CONF['mallTitle']); ?>后台管理中心</title>
-      <link href="/wstmall-o2o/Public/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-      <link rel="stylesheet" href="/wstmall-o2o/Apps/Admin/View/css/AdminLTE.css">
+      <link href="/oto/wstmall-o2o/Public/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+      <link rel="stylesheet" href="/oto/wstmall-o2o/Apps/Admin/View/css/AdminLTE.css">
       <!--[if lt IE 9]>
-      <script src="/wstmall-o2o/Public/js/html5shiv.min.js"></script>
-      <script src="/wstmall-o2o/Public/js/respond.min.js"></script>
+      <script src="/oto/wstmall-o2o/Public/js/html5shiv.min.js"></script>
+      <script src="/oto/wstmall-o2o/Public/js/respond.min.js"></script>
       <![endif]-->
-      <script src="/wstmall-o2o/Public/js/jquery.min.js"></script>
-      <script src="/wstmall-o2o/Public/plugins/bootstrap/js/bootstrap.min.js"></script>
-      <script src="/wstmall-o2o/Public/js/common.js"></script>
+      <script src="/oto/wstmall-o2o/Public/js/jquery.min.js"></script>
+      <script src="/oto/wstmall-o2o/Public/plugins/bootstrap/js/bootstrap.min.js"></script>
+      <script src="/oto/wstmall-o2o/Public/js/common.js"></script>
       <script>
       function enterLicense(){
     	  location.href="<?php echo U('Admin/Index/enterLicense');?>";

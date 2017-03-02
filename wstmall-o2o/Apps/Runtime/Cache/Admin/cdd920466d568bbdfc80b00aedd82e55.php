@@ -6,27 +6,27 @@
       <link rel="shortcut icon" href="favicon.ico"/>
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <title><?php echo ($CONF['mallTitle']); ?>后台管理中心登录</title>
-      <link href="/wstmall-o2o/Public/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-      <link rel="stylesheet" href="/wstmall-o2o/Apps/Admin/View/css/login.css">
+      <link href="/oto/wstmall-o2o/Public/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+      <link rel="stylesheet" href="/oto/wstmall-o2o/Apps/Admin/View/css/login.css">
       <!--[if lt IE 9]>
-      <script src="/wstmall-o2o/Public/js/html5shiv.min.js"></script>
-      <script src="/wstmall-o2o/Public/js/respond.min.js"></script>
+      <script src="/oto/wstmall-o2o/Public/js/html5shiv.min.js"></script>
+      <script src="/oto/wstmall-o2o/Public/js/respond.min.js"></script>
       <![endif]-->
-      <script src="/wstmall-o2o/Public/js/jquery.min.js"></script>
-      <script src="/wstmall-o2o/Public/plugins/bootstrap/js/bootstrap.min.js"></script>
-      <script src="/wstmall-o2o/Public/js/common.js"></script>
-      <script src="/wstmall-o2o/Public/plugins/plugins/plugins.js"></script>
+      <script src="/oto/wstmall-o2o/Public/js/jquery.min.js"></script>
+      <script src="/oto/wstmall-o2o/Public/plugins/bootstrap/js/bootstrap.min.js"></script>
+      <script src="/oto/wstmall-o2o/Public/js/common.js"></script>
+      <script src="/oto/wstmall-o2o/Public/plugins/plugins/plugins.js"></script>
       <script>
       var ThinkPHP = window.Think = {
-	        "ROOT"   : "/wstmall-o2o",
-	        "APP"    : "/wstmall-o2o/index.php",
-	        "PUBLIC" : "/wstmall-o2o/Public",
+	        "ROOT"   : "/oto/wstmall-o2o",
+	        "APP"    : "/oto/wstmall-o2o/index.php",
+	        "PUBLIC" : "/oto/wstmall-o2o/Public",
 	        "DEEP"   : "<?php echo C('URL_PATHINFO_DEPR');?>",
 	        "MODEL"  : ["<?php echo C('URL_MODEL');?>", "<?php echo C('URL_CASE_INSENSITIVE');?>", "<?php echo C('URL_HTML_SUFFIX');?>"],
 	        "VAR"    : ["<?php echo C('VAR_MODULE');?>", "<?php echo C('VAR_CONTROLLER');?>", "<?php echo C('VAR_ACTION');?>"]
 	  }
       </script>
-      <script src="/wstmall-o2o/Public/js/think.js"></script>
+      <script src="/oto/wstmall-o2o/Public/js/think.js"></script>
    </head>
    <script>
    $(function(){
@@ -104,7 +104,7 @@
                         <div class="input-prepend">
                             <span class="add-on">验证码：</span><input type="text" style='width:115px;' name='verfyCode' id='verfyCode' placeholder="验证码" />
                             <label class="img">
-			                	<img style='vertical-align:middle;cursor:pointer;height:25px;' class='verifyImg' src='/wstmall-o2o/Apps/Home/View/default/images/clickForVerify.png' title='刷新验证码' onclick='javascript:getVerify()'/> 
+			                	<img style='vertical-align:middle;cursor:pointer;height:25px;' class='verifyImg' src='/oto/wstmall-o2o/Apps/Home/View/default/images/clickForVerify.png' title='刷新验证码' onclick='javascript:getVerify()'/> 
 							</label>
                         </div>
                     </div>

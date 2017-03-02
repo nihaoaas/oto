@@ -11,26 +11,26 @@
 		<meta http-equiv="Cache" content="no-cache">
         <title><?php echo ($CONF['mallTitle']); ?>后台管理中心</title>
         <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
-        <link href="/wstmall-o2o/Public/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-        <link href="/wstmall-o2o/Apps/Admin/View/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+        <link href="/oto/wstmall-o2o/Public/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link href="/oto/wstmall-o2o/Apps/Admin/View/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
         <!-- Ionicons -->
-        <link href="/wstmall-o2o/Apps/Admin/View/css/ionicons.min.css" rel="stylesheet" type="text/css" />
+        <link href="/oto/wstmall-o2o/Apps/Admin/View/css/ionicons.min.css" rel="stylesheet" type="text/css" />
         <!-- Theme style -->
-        <link href="/wstmall-o2o/Apps/Admin/View/css/AdminLTE.css" rel="stylesheet" type="text/css" />
-        <script src="/wstmall-o2o/Public/js/jquery.min.js"></script>
+        <link href="/oto/wstmall-o2o/Apps/Admin/View/css/AdminLTE.css" rel="stylesheet" type="text/css" />
+        <script src="/oto/wstmall-o2o/Public/js/jquery.min.js"></script>
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
         <!--[if lt IE 9]>
-          <script src="/wstmall-o2o/Public/js/html5shiv.min.js"></script>
-          <script src="/wstmall-o2o/Public/js/respond.min.js"></script>
+          <script src="/oto/wstmall-o2o/Public/js/html5shiv.min.js"></script>
+          <script src="/oto/wstmall-o2o/Public/js/respond.min.js"></script>
         <![endif]-->
         
-        <script src="/wstmall-o2o/Public/plugins/bootstrap/js/bootstrap.min.js"></script>
-        <script src="/wstmall-o2o/Apps/Admin/View/js/jquery-ui.min.js" type="text/javascript"></script>
+        <script src="/oto/wstmall-o2o/Public/plugins/bootstrap/js/bootstrap.min.js"></script>
+        <script src="/oto/wstmall-o2o/Apps/Admin/View/js/jquery-ui.min.js" type="text/javascript"></script>
         <!-- AdminLTE App -->
-        <script src="/wstmall-o2o/Apps/Admin/View/js/AdminLTE/app.js" type="text/javascript"></script>
-        <script src="/wstmall-o2o/Public/js/common.js"></script>
-        <script src="/wstmall-o2o/Public/plugins/plugins/plugins.js"></script>
+        <script src="/oto/wstmall-o2o/Apps/Admin/View/js/AdminLTE/app.js" type="text/javascript"></script>
+        <script src="/oto/wstmall-o2o/Public/js/common.js"></script>
+        <script src="/oto/wstmall-o2o/Public/plugins/plugins/plugins.js"></script>
     </head>
         <script>
 	      $(function () {
@@ -111,7 +111,7 @@
                             <ul class="dropdown-menu">
                                 <!-- User image -->
                                 <li class="user-header bg-light-blue">
-                                    <img src="/wstmall-o2o/<?php echo session('WST_STAFF.staffPhoto');?>" class="img-circle" alt="<?php echo session('WST_STAFF.roleName');?>" />
+                                    <img src="/oto/wstmall-o2o/<?php echo session('WST_STAFF.staffPhoto');?>" class="img-circle" alt="<?php echo session('WST_STAFF.roleName');?>" />
                                     <p>
                                         <?php echo session('WST_STAFF.staffName');?> - <?php echo session('WST_STAFF.roleName');?>
                                         <small>职员编号：<?php echo ($WST_STAFF["staffNo"]); ?></small>
@@ -152,7 +152,7 @@
                     <!-- Sidebar user panel -->
                     <div class="user-panel">
                         <div class="pull-left image">
-                            <img src="/wstmall-o2o/<?php echo session('WST_STAFF.staffPhoto');?>" class="img-circle" alt="<?php echo session('WST_STAFF.staffName');?>" />
+                            <img src="/oto/wstmall-o2o/<?php echo session('WST_STAFF.staffPhoto');?>" class="img-circle" alt="<?php echo session('WST_STAFF.staffName');?>" />
                         </div>
                         <div class="pull-left info">
                             <p>Hello, <?php echo session('WST_STAFF.staffName');?></p>
